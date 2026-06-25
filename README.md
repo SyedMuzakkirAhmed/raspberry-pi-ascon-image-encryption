@@ -28,37 +28,7 @@ The system allows secure image transfer between devices by encrypting image data
 
 ## System Architecture
 
-┌─────────────┐       ┌─────────────────────────┐
-│  Laptop A   │──────▶│     Raspberry Pi        │
-│   Sender    │       │                         │
-│             │       │  Ascon-128a Encryption  │
-│ image.jpg   │       │                         │
-└─────────────┘       └───────────┬─────────────┘
-                                  │
-                                  ▼
-                        ┌────────────────────┐
-                        │ Encrypted Image    │
-                        │    Ciphertext      │
-                        └─────────┬──────────┘
-                                  │
-                                  ▼
-                       ┌─────────────────────┐
-                       │ Secure Transmission │
-                       └─────────┬───────────┘
-                                 │
-                                 ▼
-                     ┌────────────────────────┐
-                     │     Raspberry Pi       │
-                     │                        │
-                     │ Ascon-128a Decryption  │
-                     └───────────┬────────────┘
-                                 │
-                                 ▼
-                     ┌────────────────────────┐
-                     │       Laptop B         │
-                     │       Receiver         │
-                     │   Restored image.jpg   │
-                     └────────────────────────┘
+https://drive.google.com/file/d/1qV4Bef0KVAn2HymFPFSk8O5PK99oKmjA/view?usp=sharing
 
 ## Workflow
 
